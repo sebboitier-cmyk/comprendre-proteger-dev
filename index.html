@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plongée, formation et sensibilisation au milieu marin en Martinique avec Comprendre - Protéger." />
   <title>Comprendre - Protéger | Plongée & Formation Martinique</title>
 
   <style>
@@ -28,6 +29,12 @@
       text-decoration: none;
     }
 
+    a:focus-visible {
+      outline: 2px solid #19b7c9;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
     .navbar {
       position: fixed;
       top: 0;
@@ -42,10 +49,15 @@
     }
 
     .logo {
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      font-weight: bold;
-      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      display: block;
+      width: 62px;
+      height: 62px;
+      border-radius: 4px;
     }
 
     .nav-links {
@@ -61,7 +73,8 @@
       transition: 0.3s;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
       color: #19b7c9;
       opacity: 1;
     }
@@ -203,6 +216,11 @@
         justify-content: center;
       }
 
+      .logo img {
+        width: 54px;
+        height: 54px;
+      }
+
       .hero {
         padding: 150px 6% 70px;
         background-position: center;
@@ -226,11 +244,16 @@
 <body>
 
   <header class="navbar">
-    <div class="logo">COMPRENDRE - PROTÉGER</div>
+    <a class="logo" href="index.html" aria-label="Retour à l'accueil">
+      <img src="logo-societe.png" alt="Comprendre - Protéger" />
+    </a>
     <nav class="nav-links">
       <a href="#philosophie">Philosophie</a>
       <a href="#plongee">Plongée</a>
       <a href="#contact">Contact</a>
+      <a href="moniteur.html">Moniteur</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="cgv.html">CGV</a>
     </nav>
   </header>
 
@@ -241,7 +264,7 @@
 
     <section id="philosophie" class="section-dark">
       <div class="section-title">Philosophie</div>
-      <h2>Comprendre avant de plonger, Protéger après avoir compris.</h2>
+      <h2>Comprendre avant de plonger, protéger après avoir compris.</h2>
       <p class="text">
         Comprendre - Protéger est né d’une idée simple : la plongée ne se résume
         pas à descendre sous l’eau. C’est une rencontre avec un milieu vivant,
@@ -251,7 +274,7 @@
 
     <section id="plongee" class="section-blue">
       <div class="section-title">Plongée & formation</div>
-      <h2>Une plongée encadrée, Humaine et progressive.</h2>
+      <h2>Une plongée encadrée, humaine et progressive.</h2>
 
       <div class="cards">
         <div class="card">
@@ -282,7 +305,7 @@
 
     <section id="contact" class="section-dark">
       <div class="section-title">Contact</div>
-      <h2>Pas de réservation automatique, D’abord un échange.</h2>
+      <h2>Pas de réservation automatique, d’abord un échange.</h2>
       <p class="text">
         Chaque plongée mérite d’être préparée correctement. Niveau, expérience,
         attentes, conditions du moment : le contact humain permet de proposer

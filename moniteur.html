@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Présentation de Sébastien, moniteur de plongée de Comprendre - Protéger en Martinique." />
+  <title>Votre moniteur | Comprendre - Protéger</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #020b14;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #19b7c9;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(2, 11, 20, 0.75);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      display: block;
+      width: 62px;
+      height: 62px;
+      border-radius: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: #19b7c9;
+      opacity: 1;
+    }
+
+    main {
+      padding-top: 92px;
+    }
+
+    .page-header {
+      padding: 70px 8% 60px;
+      background: #020b14;
+    }
+
+    .section-title {
+      color: #19b7c9;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .portrait {
+      display: block;
+      width: min(230px, 70vw);
+      height: auto;
+      margin-top: 30px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .content {
+      padding: 70px 8% 90px;
+      background: #041827;
+    }
+
+    .text-wrapper {
+      max-width: 960px;
+    }
+
+    .text-wrapper p,
+    .text-wrapper li {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 1.08rem;
+      line-height: 1.9;
+    }
+
+    .text-wrapper p + p {
+      margin-top: 22px;
+    }
+
+    ul {
+      margin: 22px 0 24px 22px;
+    }
+
+    footer {
+      padding: 34px 8%;
+      text-align: center;
+      color: #78909c;
+      background: #01070d;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 800px) {
+      .navbar {
+        padding: 16px 6%;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .logo img {
+        width: 54px;
+        height: 54px;
+      }
+
+      main {
+        padding-top: 130px;
+      }
+
+      .page-header {
+        padding: 50px 6% 45px;
+      }
+
+      .content {
+        padding: 60px 6% 75px;
+      }
+
+      .portrait {
+        width: min(210px, 72vw);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="Retour à l'accueil">
+      <img src="logo-societe.png" alt="Comprendre - Protéger" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#philosophie">Philosophie</a>
+      <a href="index.html#plongee">Plongée</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="moniteur.html" aria-current="page">Moniteur</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="cgv.html">CGV</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="section-title">Votre moniteur</div>
+      <h1>Sébastien</h1>
+      <img class="portrait" src="sebastien-moniteur.jpg" alt="Sébastien en plongée en Martinique" />
+    </section>
+
+    <section class="content">
+      <div class="text-wrapper">
+        <p>Il découvre la plongée en Martinique en 2018, et elle devient rapidement bien plus qu'une activité de loisir.</p>
+
+        <p>D'abord niveau 1, puis niveau 2 et niveau 3, le parcours s'est construit progressivement au fil des immersions, des rencontres et de l'expérience acquise sous l'eau.</p>
+
+        <p>En 2023, il franchit une nouvelle étape avec l'obtention du diplôme d'Initiateur FFESSM, suivie des niveaux 4 et 5 en 2024, avant l'obtention du DEJEPS Activités de Plongée Subaquatique en 2026.</p>
+
+        <p>Aujourd'hui, l'approche proposée à travers Comprendre - Protéger repose avant tout sur une vision humaine et qualitative de la plongée :</p>
+
+        <ul>
+          <li>prendre le temps ;</li>
+          <li>progresser sereinement ;</li>
+          <li>comprendre le milieu marin ;</li>
+          <li>transmettre le plaisir de la plongée.</li>
+        </ul>
+
+        <p>Loin d'une approche "usine", chaque sortie est limitée à 4 plongeurs et pensée comme une expérience à partager, dans le respect du niveau, du rythme et des attentes de chacun.</p>
+
+        <p>La Martinique offre un terrain d'exploration exceptionnel. Tombants, récifs, faune tropicale et mer des Caraïbes deviennent alors le cadre idéal pour découvrir, apprendre et évoluer sous l'eau en confiance.</p>
+
+        <p>Que ce soit pour une première immersion, une exploration ou une formation, l'objectif reste le même : proposer une plongée accessible et conviviale, centrée sur le plaisir, la compréhension et la sécurité.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Comprendre - Protéger - Plongée & Formation - Martinique
+  </footer>
+
+</body>
+</html>
