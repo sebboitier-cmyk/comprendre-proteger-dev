@@ -88,6 +88,14 @@
       background: #020b14;
     }
 
+    .page-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1100px;
+    }
+
     .section-title {
       color: #19b7c9;
       text-transform: uppercase;
@@ -107,9 +115,10 @@
 
     .portrait {
       display: block;
-      width: min(230px, 70vw);
+      width: min(260px, 30vw);
+      aspect-ratio: 4 / 3;
       height: auto;
-      margin-top: 30px;
+      object-fit: cover;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.12);
     }
@@ -173,12 +182,18 @@
         padding: 50px 6% 45px;
       }
 
+      .page-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+      }
+
       .content {
         padding: 60px 6% 75px;
       }
 
       .portrait {
-        width: min(210px, 72vw);
+        width: min(230px, 82vw);
       }
     }
   </style>
@@ -202,9 +217,13 @@
 
   <main>
     <section class="page-header">
-      <div class="section-title">Votre moniteur</div>
-      <h1>Sébastien</h1>
-      <img class="portrait" src="sebastien-moniteur.jpg" alt="Sébastien en plongée en Martinique" />
+      <div class="page-header-inner">
+        <div>
+          <div class="section-title">Votre moniteur</div>
+          <h1>Sébastien</h1>
+        </div>
+        <img class="portrait" src="sebastien-moniteur.jpg" alt="Sébastien en plongée en Martinique" />
+      </div>
     </section>
 
     <section class="content">
@@ -234,7 +253,7 @@
   </main>
 
   <footer>
-    © 2026 Comprendre - Protéger - Plongée & Formation - Martinique
+    © 2026 Comprendre - Protéger - Marque déposée - Plongée & Formation - Martinique
   </footer>
 
 </body>
