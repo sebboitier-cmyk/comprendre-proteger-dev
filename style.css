@@ -372,11 +372,15 @@ footer {
   }
 
   .hero {
-    padding: 150px 6% 70px;
+    min-height: auto;
+    aspect-ratio: 916 / 1138;
+    margin-top: 152px;
+    padding: 0;
     background-image:
       linear-gradient(rgba(2, 11, 20, 0.15), rgba(2, 11, 20, 0.65)),
       url("hero-mobile.jpg");
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
   }
 
   .hero p {
